@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wordroots"
+version = "0.1.0"
+description = "英语词根词缀卡片：查询、A4 卡片与词义测验生成"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["education", "english", "etymology", "prefix", "suffix", "flashcards", "printable"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Education",
+]
+dependencies = []
+
+[project.scripts]
+wordroots = "wordroots.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/wordroots"
+Source = "https://github.com/eastyou/wordroots"
+
+[tool.setuptools]
+packages = ["wordroots"]

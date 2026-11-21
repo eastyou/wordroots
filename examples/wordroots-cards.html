@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>词根词缀卡片</title>
+<style>
+@page { size: A4 portrait; margin: 13mm 12mm; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  color: #1f2933;
+  font-size: 11pt;
+  line-height: 1.5;
+}
+h1 { font-size: 20pt; margin: 0 0 2mm; }
+.sub { color: #6b7280; font-size: 10pt; margin: 0 0 6mm; }
+.cards { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+.card {
+  border: 0.7pt dashed #9aa5b1;
+  border-radius: 2mm;
+  padding: 4mm 4.5mm;
+  min-height: 34mm;
+  page-break-inside: avoid;
+}
+.card .term {
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 17pt;
+  font-weight: 600;
+  color: #0f4c81;
+}
+.card .kind {
+  display: inline-block;
+  margin-left: 2mm;
+  padding: 0.3mm 1.8mm;
+  border-radius: 1mm;
+  background: #eef2f7;
+  color: #52606d;
+  font-size: 8.5pt;
+  vertical-align: middle;
+}
+.card .meaning { margin-top: 1.8mm; font-size: 12pt; }
+.card .examples { margin-top: 1.2mm; color: #6b7280; font-size: 9.5pt; }
+ol.quiz { margin: 0; padding-left: 8mm; }
+li.question { margin-bottom: 5mm; page-break-inside: avoid; }
+.q-head { font-size: 12.5pt; margin-bottom: 1mm; }
+.q-head .term { font-family: "SFMono-Regular", Consolas, monospace; font-weight: 600; }
+.options { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6mm 6mm; }
+.option { font-size: 10.5pt; }
+.answers { page-break-before: always; }
+.answers h2 { font-size: 15pt; margin: 0 0 4mm; }
+.answers ol { columns: 2; column-gap: 10mm; padding-left: 8mm; }
+.answers li { margin-bottom: 2mm; break-inside: avoid; }
+.note { color: #6b7280; font-size: 9.5pt; }
+@media print { .card, li.question, .answers li { break-inside: avoid; } }
+</style>
+</head>
+<body>
+<h1>词根词缀卡片</h1>
+<p class="sub">沿虚线剪开，正面看词条，背面写释义，自测更有效。</p>
+<div class="cards"><div class="card"><span class="term">scrib</span><span class="kind">词根</span><div class="meaning">写</div><div class="examples">describe · prescribe · scribble</div></div><div class="card"><span class="term">-ify</span><span class="kind">后缀</span><div class="meaning">动词：使……</div><div class="examples">simplify · beautify · classify</div></div><div class="card"><span class="term">anti-</span><span class="kind">前缀</span><div class="meaning">反对、抵抗</div><div class="examples">antibiotic · antisocial · antifreeze</div></div><div class="card"><span class="term">ject</span><span class="kind">词根</span><div class="meaning">投掷</div><div class="examples">project · reject · inject</div></div><div class="card"><span class="term">-er</span><span class="kind">后缀</span><div class="meaning">名词：做某事的人或物</div><div class="examples">teacher · worker · computer</div></div><div class="card"><span class="term">graph</span><span class="kind">词根</span><div class="meaning">写、画</div><div class="examples">photograph · autograph · paragraph</div></div><div class="card"><span class="term">form</span><span class="kind">词根</span><div class="meaning">形状</div><div class="examples">reform · uniform · transform</div></div><div class="card"><span class="term">pre-</span><span class="kind">前缀</span><div class="meaning">在前、预先</div><div class="examples">preview · predict · prepare</div></div><div class="card"><span class="term">log</span><span class="kind">词根</span><div class="meaning">言语、学科</div><div class="examples">dialogue · biology · logic</div></div><div class="card"><span class="term">un-</span><span class="kind">前缀</span><div class="meaning">不、相反</div><div class="examples">unhappy · unable · unlock</div></div><div class="card"><span class="term">-ous</span><span class="kind">后缀</span><div class="meaning">形容词：具有……性质的</div><div class="examples">famous · dangerous · nervous</div></div><div class="card"><span class="term">-scope</span><span class="kind">后缀</span><div class="meaning">名词：观察仪器</div><div class="examples">microscope · telescope · periscope</div></div></div>
+<p class="note">共 12 张卡片。</p>
+</body>
+</html>
